@@ -7,9 +7,12 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@ToString
 public class ChatMessage {
 
-    private String content;
-    private String sender;
-    private MessageType type;
+    private String senderName;
+    private String receiverName;
+    private String message;
+    private String date;
+    private Status status;
 }
